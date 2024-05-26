@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Attendance Portal</title>
-<link rel="stylesheet" href="attandencePortal.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="attandencePortal.css">
+
+
+
 </head>
 
 <body>
     <div class="parent">
-<h1> Student Attendance Portal</h1>
 
-<div class="display_bord">
-    <span id="total_present">Present</span>
-    <span id="total_absent">Absent</span>
-    <span id="total_leave">Leave</span>
-</div>
+        <h1> Student Attendance Portal</h1>
 
-<table>
-<thead>
-    <tr>
-        <th>S.no</th>
-        <th>Name</th>
-        <th>Father Name</th>
-        <th>Roll no</th>
-        <th> Age</th>
-        <th> Class</th>
-        <th> Attandence</th>
-    </tr>
-</thead>
+        <div class="display_bord">
+            <span id="total_present">Present</span>
+            <span id="total_absent">Absent</span>
+            <span id="total_leave">Leave</span>
+        </div>
 
-<tbody id="table_data"></tbody>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Father Name</th>
+                    <th>Roll no</th>
+                    <th> Age</th>
+                    <th> Class</th>
+                    <th> Attandence</th>
+                </tr>
+            </thead>
 
-</table>
-</div>
+            <tbody id="table_data"></tbody>
 
+        </table>
 
-<script src="attandencePortal.js"></script>
+        <p>
+            <u>TO Add More Student</u>
+            
+            <br><br>
+            <label> Name</label>
+            <input type="text" id="name">
+
+            <label> Father Name</label>
+            <input type="text" id="f_name">
+
+            <label>Roll no</label>
+            <input type="number" id="rollno">
+
+            <label> Age</label>
+            <input type="number" id="age">
+
+            <label>class</label>
+            <input type="number" id="clas">
+            <br><br>
+
+            <button type="button" onclick="addnewstudent()"> SUBMIT</button>
+        </p>
+    </div>
+
+    <script src="attandencePortal.js"></script>
 </body>
+
 </html>

@@ -212,7 +212,40 @@ function insertdata(){
                              </tr>`}
 }
 //**************************** TABLE DATA FUNCTION END HERE ******************************/
-insertdata()
+
+
+
+//************************** Adding New Student Data ************************************/
+
+// geting datafrom addData.html
+var newStudentname = document.getElementById("name")
+var newStudentfathername = document.getElementById("f_name")
+var newStudentrollno = document.getElementById("rollno")
+var newStudentage = document.getElementById("age")
+var newStudentclass = document.getElementById("clas")
+var nuewaddition = document.getElementById("submit")
+
+function addnewstudent(){
+
+
+  var obj ={ //creat an object with new student data
+    name : newStudentname.value,
+    fatherName : newStudentfathername.value,
+    age : newStudentage.value,
+  rollNo : newStudentrollno.value,
+  class : newStudentclass.value,
+  }
+console.log(obj);
+
+  studentData.push(obj) // putting newlly created object in main array that hold all student data
+console.log(studentData);
+  insertdata()// to display all data newly add and old both
+}
+
+
+insertdata();
+
+
 
 
 //***************************** ATTENDANCE MARKING FUNCTION ******************************/
