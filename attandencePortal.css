@@ -38,7 +38,13 @@ p{
     margin-top: 10px;
     /* text-align: end; */
     padding: 5px;
+}
 
+p>input{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    padding: 8px;
 }
 
 button{
